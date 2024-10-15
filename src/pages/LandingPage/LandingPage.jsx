@@ -1,35 +1,47 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Importer useNavigate
+import { useNavigate } from "react-router-dom";
 import cleanfeedLogo from "./cleanfeed-LOGO.png";
 import "./style.css";
 
 export const LandingPage = () => {
-  const navigate = useNavigate(); // Initialiser le hook useNavigate
+  const navigate = useNavigate();
 
   const handleLoginClick = () => {
-    navigate("/authentification"); // Rediriger vers la page d'authentification
+    navigate("/authentification");
   };
 
   return (
       <div className="landing-page">
-        <div className="content">
+        <header className="header">
+          <img className="cleanfeed-logo" alt="CleanFeed Logo" src={cleanfeedLogo} />
+          <div className="nav-links">
+            <span className="about">À propos</span>
+            <span className="contact">Nous contacter</span>
+            <div className="language-selector">
+              <span className="language">FR</span>
+              <span className="globe-icon">M</span>
+            </div>
+          </div>
+        </header>
+
+        <main className="main-content">
           <div className="text-container">
-            <p className="main-text">Protégez-vous en ligne avec CleanFeed : filtrez, signalez, et respirez.</p>
-            <img className="cleanfeed-logo" alt="CleanFeed Logo" src={cleanfeedLogo} />
+            <h1 className="main-text">
+              Protégez-vous en ligne<br />
+              avec CleanFeed : filtrez,<br />
+              signalez, et respirez.
+            </h1>
           </div>
           <button className="login-button" onClick={handleLoginClick}>
             Connexion <span className="arrow-icon">→</span>
           </button>
+        </main>
+
+        <footer className="footer">
           <div className="footer-links">
-            <span>Conditions d’utilisation | Confidentialité</span>
+            <span>Conditions d'utilisation | Confidentialité</span>
           </div>
-          <div className="about-container">
-            <span className="about">À propos</span>
-            <span className="contact">Nous contacter</span>
-            <span className="language">FR</span>
-            <span className="globe-icon">🌐</span>
-          </div>
-        </div>
+        </footer>
       </div>
   );
 };

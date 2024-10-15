@@ -1,12 +1,12 @@
 import React from 'react';
-import cleanfeedLogo from './LOGO.png';
-import Capture1 from './Capture1.png';
+import cleanfeedLogo from './images.png';
+import Capture1 from './images.png';
 import newspaperBackgroundConcept from './newspaper-background-concept.png';
 import images from './images.png';
 import stickersMurauxLogoNike from './stickers-muraux-logo-nike.png';
 import conceptPersonSufferingFromCybersicknessTechnologyAddiction from './concept-person-suffering-from-cybersickness-technology-addiction.png';
-import Capture from './Capture.png';
-import rectangle45 from './Rectangle.svg';
+import Capture from './images.png';
+import rectangle45 from './images.png';
 import './style.css';
 
 // Main Dashboard component
