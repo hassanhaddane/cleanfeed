@@ -5,9 +5,13 @@ import './style.css';
 export const Dashboard = () => {
     const navigate = useNavigate();
 
-    const handleCyberbullyingReport = () => {
-        navigate('/cyberbullying');
+    const handlepubsCyberbullying = () => {
+        navigate('/pubsCyberbullying');
     };
+
+    const handleFakeNewsPosts = () => {
+        navigate('/pubsFakeNews')
+    }
 
     return (
         <div className="dashboard">
@@ -28,13 +32,13 @@ export const Dashboard = () => {
                     <section className="issue-section cyberbullying">
                         <h3>Cyberbullying</h3>
                         <img src="./images.png" alt="Cyberbullying" />
-                        <button className="report-btn" onClick={handleCyberbullyingReport}>Signaler</button>
+                        <button className="report-btn" onClick={handlepubsCyberbullying}>Signaler</button>
                     </section>
 
                     <section className="issue-section fake-news">
                         <h3>Fake news</h3>
                         <img src="./images.png" alt="Fake News" />
-                        <button className="report-btn">Signaler</button>
+                        <button className="report-btn" onClick={handleFakeNewsPosts}>Signaler</button>
                     </section>
                 </div>
             </main>

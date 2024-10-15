@@ -4,6 +4,9 @@ import { LandingPage } from "./pages/LandingPage/LandingPage";
 import { Authentification } from "./pages/Authentification/Authentification";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
 import {CyberbullyingPage} from "./pages/PageCyberbullying/PageCyberbullying";
+import {PageFakeNews} from "./pages/PageFakeNews/PageFakeNews";
+import {PagePubsCyberbulling} from "./pages/PageCyberbullying/postsCyberbullying/pagePubCyberbullying";
+import {PagePubsFakeNews} from "./pages/PageFakeNews/postsFakeNews/postsFakeNews";
 
 function App() {
     return (
@@ -21,6 +24,16 @@ function App() {
 
                     {/* Route pour la page Cyberbullying */}
                     <Route path="/cyberbullying" element={<CyberbullyingPage />} />
+
+                    {/* Route pour la page FakeNews */}
+                    <Route path="/fakenews" element={<PageFakeNews />} />
+
+                    {/* Route pour la page CyberBullying Posts */}
+                    <Route path="/pubsCyberbullying" element={<PagePubsCyberbulling />} />
+
+                    {/* Route pour la page FakeNews Posts */}
+                    <Route path="/pubsFakeNews" element={<PagePubsFakeNews />} />
+
                 </Routes>
             </div>
         </Router>
