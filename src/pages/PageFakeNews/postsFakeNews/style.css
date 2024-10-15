@@ -1,0 +1,127 @@
+.page-pubs-fake-news {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.reports-list {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.report-item:hover {
+    background-color: #e6f3ff;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.new-report-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e7f3ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1877f2;
+    transition: background-color 0.3s;
+}
+
+.new-report-btn:hover {
+    background-color: #d0e6ff;
+}
+
+.report-details {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.vote-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.vote-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.dislike-btn {
+    background-color: #ffebe9;
+    color: #e41e3f;
+}
+
+.like-btn {
+    background-color: #e7f3ff;
+    color: #1877f2;
+}
+
+.dislike-btn:hover {
+    background-color: #ffd1d1;
+}
+
+.like-btn:hover {
+    background-color: #d0e6ff;
+}

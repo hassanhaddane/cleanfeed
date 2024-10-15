@@ -1,572 +1,146 @@
+import React, { useState } from 'react';
+import './style.css';
 
-import 
- 
-  React 
+// Import images using require
+const images = {
+  cleanfeedLogo: require('../LandingPage/cleanfeed-LOGO.png'),
+  snapchatIcon: require('../PageCyberbullying/Snapchat.png'),
+  twitterIcon: require('../PageCyberbullying/2496110.png'),
+  facebookIcon: require('../PageCyberbullying/images.png'),
+  instagramIcon: require('../PageCyberbullying/images.png'),
+};
 
- 
+export const CyberbullyingPage = () => {
+  const [formData, setFormData] = useState({
+    socialNetwork: '',
+    postLink: '',
+    userAccount: '',
+    description: '',
+    screenshot: null
+  });
 
-from
-"react"
-import 
+  const [preview, setPreview] = useState(null);
+  const [votes, setVotes] = useState({ likes: 0, dislikes: 0 });
+  const [userVote, setUserVote] = useState(null);
 
- 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
 
-from
-"./2496110.png"
-import 
- 
-  captureDECran20231010A15571 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setFormData(prevState => ({
+      ...prevState,
+      screenshot: file
+    }));
+    setPreview(URL.createObjectURL(file));
+  };
 
- 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setPreview(formData);
+  };
 
-from
-"./capture-d-e-cran-2023-10-10-a-15-57-1.png"
-import 
- 
-  clean3 
-
- 
-
-from
-"./clean-3.png"
-import 
- 
-  clean4 
-
- 
-
-from
-"./clean-4.png"
-import 
- 
-  cleanfeedLogo 
-
- 
-
-from
-"./cleanfeed-LOGO.png"
-import 
- 
-  images 
-
- 
-
-from
-"./images.png"
-import 
- 
-  modeleConceptionMaquetteTweetRealisteMediasSociauxTwitterFondTransparent539007567 
-
- 
-
-from
-"./modele-conception-maquette-tweet-realiste-medias-sociaux-twitter-fond-transparent-539007-567.png"
-import 
- 
-  rectangle45 
-
- 
-
-from
-"./rectangle-45.svg"
-import 
- 
-  rectangle73 
-
- 
-
-from
-"./rectangle-73.svg"
-import 
- 
-  snapchat 
-
- 
-
-from
-"./snapchat.png"
-import "./style.css"
-import 
- 
-  tiktok 
-
- 
-
-from
-"./tiktok.png"
-
-export const PageCyberbullying = () => {
-  
+  const handleVote = (voteType) => {
+    if (userVote === null) {
+      setVotes(prevVotes => ({
+        ...prevVotes,
+        [voteType]: prevVotes[voteType] + 1
+      }));
+      setUserVote(voteType);
+    }
+  };
 
   return (
-    <div
-  
-    className= "PAGE-CYBERBULLYING" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<div
-  
-    className= "div" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<div
-  
-    className= "overlap" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<div
-  
-    className= "overlap-group" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<img
-  
-    className= "cleanfeed-LOGO" 
-
-  
-
-  
-
-  alt= "Cleanfeed LOGO" 
-src={ cleanfeedLogo }
-
-
-  
-
-
-/>
-<div
-  
-    className= "overlap-group-2" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<img
-  
-    className= "rectangle" 
-
-  
-
-  
-
-  alt= "Rectangle" 
-src={ rectangle73 }
-
-
-  
-
-
-/>
-<div
-  
-    className= "rectangle-2" 
-
-  
-
-  
-
-  
-
-  
-
-
-/>
-<p
-  
-    className= "text-wrapper" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Harcèlement récurrent sur ce tiktokeur
-</p>
-<img
-  
-    className= "tiktok" 
-
-  
-
-  
-
-  alt= "Tiktok" 
-src={ tiktok }
-
-
-  
-
-
-/>
-<img
-  
-    className= "images" 
-
-  
-
-  
-
-  alt= "Images" 
-src={ images }
-
-
-  
-
-
-/>
-<img
-  
-    className= "snapchat" 
-
-  
-
-  
-
-  alt= "Snapchat" 
-src={ snapchat }
-
-
-  
-
-
-/>
-<img
-  
-    className= "img" 
-
-  
-
-  
-
-  alt= "Rectangle" 
-src={ rectangle73 }
-
-
-  
-
-
-/>
-<div
-  
-    className= "rectangle-3" 
-
-  
-
-  
-
-  
-
-  
-
-
-/>
-<img
-  
-    className= "clean" 
-
-  
-
-  
-
-  alt= "Clean" 
-src={ clean4 }
-
-
-  
-
-
-/>
-<img
-  
-    className= "clean-2" 
-
-  
-
-  
-
-  alt= "Clean" 
-src={ clean3 }
-
-
-  
-
-
-/>
-<img
-  
-    className= "modele-conception" 
-
-  
-
-  
-
-  alt= "Modele conception" 
-src={ modeleConceptionMaquetteTweetRealisteMediasSociauxTwitterFondTransparent539007567 }
-
-
-  
-
-
-/>
-<div
-  
-    className= "text-wrapper-2" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Insulte raciste
-</div>
-<img
-  
-    className= "element" 
-
-  
-
-  
-
-  alt= "Element" 
-src={  }
-
-
-  
-
-
-/>
-</div>
-</div>
-<img
-  
-    className= "capture-d-ecran" 
-
-  
-
-  
-
-  alt= "Capture d ecran" 
-src={ captureDECran20231010A15571 }
-
-
-  
-
-
-/>
-</div>
-<img
-  
-    className= "rectangle-4" 
-
-  
-
-  
-
-  alt= "Rectangle" 
-src={ rectangle45 }
-
-
-  
-
-
-/>
-<div
-  
-    className= "div-wrapper" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<div
-  
-    className= "text-wrapper-3" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Homophobie dans les commentaires
-</div>
-</div>
-<div
-  
-    className= "overlap-2" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-<div
-  
-    className= "text-wrapper-3" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Vidéo inapproprié (meurtre)
-</div>
-</div>
-<p
-  
-    className= "contexte-racisme-sur" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Contexte : Racisme sur un homme <br/>de couleur noir
-</p>
-<div
-  
-    className= "text-wrapper-4" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Lien : https://twitter.com
-</div>
-<div
-  
-    className= "text-wrapper-5" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-Léa.B
-</div>
-<div
-  
-    className= "nous-contacter" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-{" "}Nous contacter
-</div>
-<div
-  
-    className= "text-wrapper-6" 
-
-  
-
-  
-
-  
-
-  
-
-
->
-@usernamebad
-</div>
-</div>
-</div>
-)
-}
+      <div className="cyberbullying-page">
+        <header className="header">
+          <img src={images.cleanfeedLogo} alt="CleanFeed Logo" className="logo" />
+          <div className="user-info">Léa.B</div>
+        </header>
+
+        <main className="main-content">
+          <form onSubmit={handleSubmit} className="report-form">
+            <select
+                name="socialNetwork"
+                value={formData.socialNetwork}
+                onChange={handleInputChange}
+                required
+            >
+              <option value="">Sélectionnez un réseau social</option>
+              <option value="snapchat">Snapchat</option>
+              <option value="twitter">Twitter</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+            </select>
+
+            <input
+                type="url"
+                name="postLink"
+                placeholder="Lien du post"
+                value={formData.postLink}
+                onChange={handleInputChange}
+                required
+            />
+
+            <input
+                type="text"
+                name="userAccount"
+                placeholder="Compte d'utilisateur (lien ou pseudo)"
+                value={formData.userAccount}
+                onChange={handleInputChange}
+                required
+            />
+
+            <textarea
+                name="description"
+                placeholder="Description"
+                value={formData.description}
+                onChange={handleInputChange}
+                required
+            />
+
+            <input
+                type="file"
+                name="screenshot"
+                onChange={handleFileChange}
+                accept="image/*"
+                required
+            />
+
+            <button type="submit">Signaler</button>
+          </form>
+
+          {preview && (
+              <div className="preview-sidebar">
+                <h3>Aperçu du signalement</h3>
+                <img
+                    src={images[formData.socialNetwork + 'Icon']}
+                    alt={formData.socialNetwork}
+                    className="social-icon"
+                />
+                <p><strong>Lien:</strong> {formData.postLink}</p>
+                <p><strong>Utilisateur:</strong> {formData.userAccount}</p>
+                <p><strong>Description:</strong> {formData.description}</p>
+                {preview instanceof File ? (
+                    <img src={URL.createObjectURL(preview)} alt="Screenshot" className="preview-image" />
+                ) : (
+                    <img src={'https://media.istockphoto.com/id/1222357475/fr/vectoriel/ic%C3%B4ne-de-pr%C3%A9visualisation-dimage-place-dimage-pour-le-site-web-ou-la-conception-dui-ux.jpg?s=612x612&w=0&k=20&c=BBIsJc60xEMdIHhC3p8dsO8rbWAPg29fP95_vktRsPc='} alt="Screenshot" className="preview-image" />
+                )}
+                <div className="vote-section">
+                  <button onClick={() => handleVote('likes')} disabled={userVote !== null}> {votes.likes}</button>
+                  <button onClick={() => handleVote('dislikes')} disabled={userVote !== null}> {votes.dislikes}</button>
+                </div>
+              </div>
+          )}
+        </main>
+
+        <footer className="footer">
+          <button className="contact-btn">Nous contacter</button>
+        </footer>
+      </div>
+  );
+};

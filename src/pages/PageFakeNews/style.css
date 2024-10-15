@@ -1,0 +1,35 @@
+.fake-news-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.report-form {
+    flex: 1;
+    padding: 1rem;
+}
+
+.preview-sidebar {
+    width: 300px;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Add more specific styles as needed */
