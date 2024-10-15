@@ -1,49 +1,86 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import harassementIllustration from "./harassment.png";
+import fakeNews from "./fake-news.png";
+import cyberbullying from "./sadness.png";
+import "./style.css";
 
 export const Dashboard = () => {
-    return (
-        <div className="dashboard">
-            <header className="header">
-                <img className="logo" src="/path-to-cleanfeed-logo.png" alt="CleanFeed Logo" />
-                <div className="user-info">Léa.B</div>
-            </header>
+  return (
+    <div className="dashboard">
+      <header className="header">
+        <img
+          className="logo"
+          src="/path-to-cleanfeed-logo.png"
+          alt="CleanFeed Logo"
+        />
+        <div className="user-info">Léa.B</div>
+      </header>
 
-            <main className="main-content">
-                <section className="awareness-section">
-                    <h2>Sensibilisation contre les fakes news et le cyberharcèlement</h2>
-                    <p>L'importance de la sensibilisation au cyber harcèlement.</p>
-                    <p>Nous sommes ici pour soutenir et prendre les mesures appropriées afin d'assurer un environnement numérique sûr et respectueux.</p>
-                    <button className="learn-more-btn">En savoir +</button>
-                </section>
-
-                <div className="issues-container">
-                    <section className="issue-section cyberbullying">
-                        <h3>Cyberbullying</h3>
-                        <img src="/path-to-cyberbullying-image.png" alt="Cyberbullying" />
-                        <button className="report-btn">Signaler</button>
-                    </section>
-
-                    <section className="issue-section fake-news">
-                        <h3>Fake news</h3>
-                        <img src="/path-to-fake-news-image.png" alt="Fake News" />
-                        <button className="report-btn">Signaler</button>
-                    </section>
-                </div>
-            </main>
-
-            <aside className="sidebar">
-                <h3>Mes récompenses</h3>
-                <ul className="rewards-list">
-                    <li>10 signalements = 5% réduction chez Adidas</li>
-                    <li>25 signalements = 10% réduction chez UberEats</li>
-                    <li>50 signalements = 15% réduction chez AirFrance</li>
-                </ul>
-            </aside>
-
-            <footer className="footer">
-                <button className="contact-btn">Nous contacter</button>
-            </footer>
+      <main className="main-content">
+        <div className="card bg-base-100 image-full w-1/2 h-1/3 shadow-xl mb-16">
+          <figure>
+            <img
+                src={harassementIllustration}
+              alt="Illustration de harcellement"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Sensibilisation contre les fakes news et le cyberharcèlement</h2>
+            <p>Nous sommes ici pour soutenir et prendre les mesures appropriées
+            afin d'assurer un environnement numérique sûr et respectueux.</p>
+            <div class="card-actions justify-end">
+              <button class="btn">En savoir plus</button>
+            </div>
+          </div>
         </div>
-    );
+
+        <div className="flex gap-8">
+        <div className="card bg-base-100 image-full w-96 shadow-xl mb-16">
+          <figure>
+            <img
+                src={cyberbullying}
+              alt="Illustration de harcellement"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Cyberbullying</h2>
+            <p>Dénoncer un harcellement</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-error">Signaler</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 image-full w-96 shadow-xl mb-16">
+          <figure>
+            <img
+                src={fakeNews}
+              alt="Illustration de harcellement"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Fake news</h2>
+            <p>Dénoncer une fake news</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-error">Signaler</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
+
+      <aside className="sidebar">
+        <h3>Mes récompenses</h3>
+        <ul className="rewards-list">
+          <li>10 signalements = 5% réduction chez Adidas</li>
+          <li>25 signalements = 10% réduction chez UberEats</li>
+          <li>50 signalements = 15% réduction chez AirFrance</li>
+        </ul>
+      </aside>
+
+      <footer className="footer">
+        <button className="contact-btn">Nous contacter</button>
+      </footer>
+    </div>
+  );
 };
