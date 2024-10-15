@@ -4,12 +4,12 @@ import './style.css';
 
 // Import your images here
 import cleanLogo from '../../../assets/Clean_3.png';
-import userAvatar from '../../../assets/Snapchat.png';
-import twitterIcon from '../../../assets/Snapchat.png';
-import tiktokIcon from '../../../assets/Snapchat.png';
-import instagramIcon from '../../../assets/Snapchat.png';
-import snapchatIcon from '../../../assets/Snapchat.png';
-import facebookIcon from '../../../assets/Snapchat.png';
+import userAvatar from '../../../assets/avatar.png.png';
+import twitterIcon from '../../../assets/twitter.png';
+import tiktokIcon from '../../../assets/tiktok.png';
+import instagramIcon from '../../../assets/instagram.png';
+import snapchatIcon from '../../../assets/snapchat.png';
+import facebookIcon from '../../../assets/facebook.png';
 
 const fakeNewsReports = [
     { id: 1, text: "Mensonges sur le gagnant des élections", icon: twitterIcon },

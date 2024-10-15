@@ -4,9 +4,9 @@ import './style.css';
 // Import images using require
 const images = {
     cleanfeedLogo: require('../../assets/cleanfeed-LOGO.png'),
-    twitterIcon: require('../../assets/images.png'),
-    facebookIcon: require('../../assets/images.png'),
-    instagramIcon: require('../../assets/images.png'),
+    twitterIcon: require('../../assets/twitter.png'),
+    facebookIcon: require('../../assets/facebook.png'),
+    instagramIcon: require('../../assets/instagram.png'),
 };
 
 export const PageFakeNews = () => {

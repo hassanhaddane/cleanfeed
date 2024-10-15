@@ -6,8 +6,8 @@ const images = {
   cleanfeedLogo: require('../../assets/cleanfeed-LOGO.png'),
   snapchatIcon: require('../../assets/Snapchat.png'),
   twitterIcon: require('../../assets/2496110.png'),
-  facebookIcon: require('../../assets/images.png'),
-  instagramIcon: require('../../assets/images.png'),
+  facebookIcon: require('../../assets/facebook.png'),
+  instagramIcon: require('../../assets/instagram.png'),
 };
 
 export const CyberbullyingPage = () => {
