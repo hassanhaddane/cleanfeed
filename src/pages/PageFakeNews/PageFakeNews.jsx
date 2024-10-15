@@ -3,10 +3,10 @@ import './style.css';
 
 // Import images using require
 const images = {
-    cleanfeedLogo: require('../LandingPage/cleanfeed-LOGO.png'),
-    twitterIcon: require('../PageFakeNews/images.png'),
-    facebookIcon: require('../PageFakeNews/images.png'),
-    instagramIcon: require('../PageFakeNews/images.png'),
+    cleanfeedLogo: require('../../assets/cleanfeed-LOGO.png'),
+    twitterIcon: require('../../assets/images.png'),
+    facebookIcon: require('../../assets/images.png'),
+    instagramIcon: require('../../assets/images.png'),
 };
 
 export const PageFakeNews = () => {

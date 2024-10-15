@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 // Import your images here
-import cleanLogo from '../Clean_3.png';
-import userAvatar from '../Snapchat.png';
-import twitterIcon from '../Snapchat.png';
-import tiktokIcon from '../Snapchat.png';
-import instagramIcon from '../Snapchat.png';
-import snapchatIcon from '../Snapchat.png';
-import facebookIcon from '../Snapchat.png';
+import cleanLogo from '../../../assets/Clean_3.png';
+import userAvatar from '../../../assets/Snapchat.png';
+import twitterIcon from '../../../assets/Snapchat.png';
+import tiktokIcon from '../../../assets/Snapchat.png';
+import instagramIcon from '../../../assets/Snapchat.png';
+import snapchatIcon from '../../../assets/Snapchat.png';
+import facebookIcon from '../../../assets/Snapchat.png';
 
 const reports = [
     { id: 1, text: "Insulte raciste", icon: twitterIcon },

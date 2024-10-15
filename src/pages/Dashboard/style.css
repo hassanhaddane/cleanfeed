@@ -1,3 +1,7 @@
+#root{
+  background-color: #e0e0e0;
+
+}
 .dashboard {
   display: grid;
   grid-template-areas:
@@ -74,4 +78,8 @@
 
 .rewards-list li {
   margin-bottom: 0.5rem;
+}
+
+.py-8{
+  background-color: white;
 }

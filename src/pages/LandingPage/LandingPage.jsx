@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import cleanfeedLogo from "./cleanfeed-LOGO.png";
+import cleanfeedLogo from "../../assets/cleanfeed-LOGO.png";
 import "./style.css";
 
 export const LandingPage = () => {

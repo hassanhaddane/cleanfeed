@@ -3,11 +3,11 @@ import './style.css';
 
 // Import images using require
 const images = {
-  cleanfeedLogo: require('../LandingPage/cleanfeed-LOGO.png'),
-  snapchatIcon: require('../PageCyberbullying/Snapchat.png'),
-  twitterIcon: require('../PageCyberbullying/2496110.png'),
-  facebookIcon: require('../PageCyberbullying/images.png'),
-  instagramIcon: require('../PageCyberbullying/images.png'),
+  cleanfeedLogo: require('../../assets/cleanfeed-LOGO.png'),
+  snapchatIcon: require('../../assets/Snapchat.png'),
+  twitterIcon: require('../../assets/2496110.png'),
+  facebookIcon: require('../../assets/images.png'),
+  instagramIcon: require('../../assets/images.png'),
 };
 
 export const CyberbullyingPage = () => {

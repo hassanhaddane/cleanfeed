@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
-import cleanfeedLogo from './cleanfeed-LOGO.png';
+import cleanfeedLogo from '../../assets/cleanfeed-LOGO.png';
 import './style.css';
 
 export const Authentification = () => {
@@ -29,7 +29,6 @@ export const Authentification = () => {
             <header className="header">
                 <div className="language-selector">FR</div>
             </header>
-
             <main className="main-content">
                 <img className="cleanfeed-logo" alt="Cleanfeed LOGO" src={cleanfeedLogo}/>
                 <form onSubmit={handleSubmit} className="form">
