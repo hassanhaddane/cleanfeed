@@ -14,7 +14,7 @@ export const LandingPage = () => {
     <div className="landing-page">
       <header className="header">
         <img
-          className="cleanfeed-logo"
+          className="h-32 w-32"
           alt="CleanFeed Logo"
           src={cleanfeedLogo}
         />
