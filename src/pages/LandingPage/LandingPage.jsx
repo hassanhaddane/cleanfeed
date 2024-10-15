@@ -23,7 +23,6 @@ export const LandingPage = () => {
           <span className="contact">Nous contacter</span>
           <div className="language-selector">
             <span className="language">FR</span>
-            <span className="globe-icon">M</span>
           </div>
         </div>
       </header>
