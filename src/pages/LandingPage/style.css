@@ -1,0 +1,154 @@
+.landing-page {
+  background-color: #f6efff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-page .div {
+  background-color: #f6efff;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.landing-page .overlap-group {
+  height: 1105px;
+  left: -720px;
+  position: absolute;
+  top: -512px;
+  width: 1474px;
+}
+
+.landing-page .how-to-put-your {
+  height: 1024px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.landing-page .cleanfeed-LOGO {
+  height: 495px;
+  left: 670px;
+  object-fit: cover;
+  position: absolute;
+  top: 264px;
+  width: 729px;
+}
+
+.landing-page .text-wrapper {
+  color: #000000;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left: 851px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 887px;
+  width: 623px;
+}
+
+.landing-page .arrow {
+  height: 15px;
+  left: 326px;
+  position: absolute;
+  top: 686px;
+  width: 37px;
+}
+
+.landing-page .overlap {
+  background-color: #ffffff;
+  border-radius: 100px;
+  height: 52px;
+  left: 131px;
+  position: absolute;
+  top: 667px;
+  width: 296px;
+}
+
+.landing-page .text-wrapper-2 {
+  color: #000000;
+  font-family: "Poppins-Light", Helvetica;
+  font-size: 26px;
+  font-weight: 300;
+  left: 38px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5px;
+  width: 175px;
+}
+
+.landing-page .text-wrapper-3 {
+  color: #000000;
+  font-family: "Poppins-Light", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  left: 131px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 983px;
+  width: 386px;
+}
+
+.landing-page .overlap-2 {
+  height: 85px;
+  left: 935px;
+  position: absolute;
+  top: 51px;
+  width: 486px;
+}
+
+.landing-page .propos-nous {
+  color: #000000;
+  font-family: "Poppins-Light", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5px;
+  width: 386px;
+}
+
+.landing-page .rectangle {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 100px;
+  height: 39px;
+  left: 363px;
+  position: absolute;
+  top: 0;
+  width: 85px;
+}
+
+.landing-page .text-wrapper-4 {
+  color: #000000;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 406px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1px;
+  width: 80px;
+}
+
+.landing-page .globe {
+  background-image: url(./subtract.svg);
+  background-size: 100% 100%;
+  height: 21px;
+  left: 374px;
+  position: absolute;
+  top: 9px;
+  width: 24px;
+}

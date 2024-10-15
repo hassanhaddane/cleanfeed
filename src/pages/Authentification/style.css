@@ -1,0 +1,221 @@
+.authentification {
+  background-color: #f6efff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.authentification .div {
+  background-color: #f6efff;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.authentification .overlap-group {
+  height: 1343px;
+  left: -720px;
+  position: absolute;
+  top: -512px;
+  width: 1594px;
+}
+
+.authentification .how-to-put-your {
+  height: 1024px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.authentification .cleanfeed-LOGO {
+  height: 168px;
+  left: 567px;
+  object-fit: cover;
+  position: absolute;
+  top: 229px;
+  width: 305px;
+}
+
+.authentification .rectangle {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 418px;
+  left: 1285px;
+  position: absolute;
+  top: 925px;
+  width: 309px;
+}
+
+.authentification .text-wrapper {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 1328px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1189px;
+}
+
+.authentification .rectangle-2 {
+  background-color: #c4e1f6;
+  border-radius: 100px;
+  height: 63px;
+  left: 1300px;
+  position: absolute;
+  top: 1263px;
+  width: 280px;
+}
+
+.authentification .text-wrapper-2 {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 1332px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 980px;
+}
+
+.authentification .rectangle-3 {
+  border: 1px solid;
+  border-color: #161348;
+  border-radius: 20px;
+  height: 38px;
+  left: 1309px;
+  position: absolute;
+  top: 974px;
+  width: 261px;
+}
+
+.authentification .rectangle-4 {
+  border: 1px solid;
+  border-color: #161348;
+  border-radius: 20px;
+  height: 36px;
+  left: 1309px;
+  position: absolute;
+  top: 1115px;
+  width: 261px;
+}
+
+.authentification .rectangle-5 {
+  border: 1px solid;
+  border-color: #161348;
+  border-radius: 20px;
+  height: 36px;
+  left: 1309px;
+  position: absolute;
+  top: 1184px;
+  width: 261px;
+}
+
+.authentification .text-wrapper-3 {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 1332px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1050px;
+}
+
+.authentification .text-wrapper-4 {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 1332px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1120px;
+}
+
+.authentification .text-wrapper-5 {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  left: 1373px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1275px;
+}
+
+.authentification .rectangle-6 {
+  border: 1px solid;
+  border-color: #161348;
+  border-radius: 20px;
+  height: 35px;
+  left: 1309px;
+  position: absolute;
+  top: 1045px;
+  width: 261px;
+}
+
+.authentification .overlap {
+  height: 67px;
+  left: 1298px;
+  position: absolute;
+  top: 51px;
+  width: 123px;
+}
+
+.authentification .rectangle-7 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 100px;
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 85px;
+}
+
+.authentification .text-wrapper-6 {
+  color: #000000;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1px;
+  width: 80px;
+}
+
+.authentification .globe {
+  background-image: url(./subtract.svg);
+  background-size: 100% 100%;
+  height: 21px;
+  left: 11px;
+  position: absolute;
+  top: 9px;
+  width: 24px;
+}
+
+.authentification .text-wrapper-7 {
+  color: #000000;
+  font-family: "Poppins-Light", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  left: 527px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 981px;
+  width: 386px;
+}
