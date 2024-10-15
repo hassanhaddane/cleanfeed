@@ -24,16 +24,19 @@ export const LandingPage = () => {
           </div>
         </header>
 
-        <main className="main-content">
-          <div className="text-container">
-            <h1 className="main-text">
+        <main className="">
+          <div className="flex-col">
+            <div className="flex items-baseline">
+          <img className="" alt="CleanFeed Logo" src={cleanfeedLogo} />
+            <h1 className="text-3xl font-bold">
               Protégez-vous en ligne<br />
               avec CleanFeed : filtrez,<br />
               signalez, et respirez.
             </h1>
+            </div>
           </div>
-          <button className="login-button" onClick={handleLoginClick}>
-            Connexion <span className="arrow-icon">→</span>
+          <button className="flex gap-2 items-baseline px-8 py-4 bg-blue-500 text-white rounded-full" onClick={handleLoginClick}>
+            Connexion <span>→</span>
           </button>
         </main>
 
