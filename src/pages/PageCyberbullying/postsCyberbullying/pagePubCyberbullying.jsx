@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 // Import your images here
-import cleanLogo from '../../../assets/Clean_3.png';
+import cleanLogo from '../../../assets/CleanFeed_LOGO.png';
 import userAvatar from '../../../assets/avatar.png';
 import twitterIcon from '../../../assets/twitter.png';
 import tiktokIcon from '../../../assets/tiktok.png';

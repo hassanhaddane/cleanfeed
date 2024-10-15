@@ -5,7 +5,7 @@ import './style.css';
 const images = {
   cleanfeedLogo: require('../../assets/cleanfeed-LOGO.png'),
   snapchatIcon: require('../../assets/Snapchat.png'),
-  twitterIcon: require('../../assets/2496110.png'),
+  twitterIcon: require('../../assets/twitter.png'),
   facebookIcon: require('../../assets/facebook.png'),
   instagramIcon: require('../../assets/instagram.png'),
 };
