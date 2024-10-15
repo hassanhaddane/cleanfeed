@@ -28,8 +28,8 @@ export const LandingPage = () => {
         </div>
       </header>
 
-      <main className="">
-        <div className="flex-col">
+      <main className="flex-col">
+        <div>
           <div className="flex justify-center items-center flex-row-reverse">
             <img className="" alt="CleanFeed Logo" src={cleanfeedLogo} />
             <h1 className="text-4xl font-bold">
