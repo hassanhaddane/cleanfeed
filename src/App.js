@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { LandingPage } from "./pages/LandingPage/LandingPage";
-import { Authentification } from "./pages/Authentification/Authentification"; // Assurez-vous que le chemin est correct
-import { Dashboard } from "./pages/Dashboard/Dashboard"; // Assurez-vous que le chemin est correct
+import { Authentification } from "./pages/Authentification/Authentification";
+import { Dashboard } from "./pages/Dashboard/Dashboard";
+import {CyberbullyingPage} from "./pages/PageCyberbullying/PageCyberbullying";
 
 function App() {
     return (
@@ -18,6 +19,8 @@ function App() {
                     {/* Route pour la page dashboard */}
                     <Route path="/dashboard" element={<Dashboard />} />
 
+                    {/* Route pour la page Cyberbullying */}
+                    <Route path="/cyberbullying" element={<CyberbullyingPage />} />
                 </Routes>
             </div>
         </Router>

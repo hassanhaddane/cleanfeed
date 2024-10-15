@@ -1,11 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 export const Dashboard = () => {
+    const navigate = useNavigate();
+
+    const handleCyberbullyingReport = () => {
+        navigate('/cyberbullying');
+    };
+
     return (
         <div className="dashboard">
             <header className="header">
-                <img className="logo" src="/path-to-cleanfeed-logo.png" alt="CleanFeed Logo" />
+                <img className="logo" src="./images.png" alt="CleanFeed Logo" />
                 <div className="user-info">Léa.B</div>
             </header>
 
@@ -20,13 +27,13 @@ export const Dashboard = () => {
                 <div className="issues-container">
                     <section className="issue-section cyberbullying">
                         <h3>Cyberbullying</h3>
-                        <img src="/path-to-cyberbullying-image.png" alt="Cyberbullying" />
-                        <button className="report-btn">Signaler</button>
+                        <img src="./images.png" alt="Cyberbullying" />
+                        <button className="report-btn" onClick={handleCyberbullyingReport}>Signaler</button>
                     </section>
 
                     <section className="issue-section fake-news">
                         <h3>Fake news</h3>
-                        <img src="/path-to-fake-news-image.png" alt="Fake News" />
+                        <img src="./images.png" alt="Fake News" />
                         <button className="report-btn">Signaler</button>
                     </section>
                 </div>
