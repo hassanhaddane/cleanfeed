@@ -30,9 +30,9 @@ export const LandingPage = () => {
 
       <main className="">
         <div className="flex-col">
-          <div className="flex items-baseline">
+          <div className="flex justify-center items-center flex-row-reverse">
             <img className="" alt="CleanFeed Logo" src={cleanfeedLogo} />
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-4xl font-bold">
               Protégez-vous en ligne
               <br />
               avec CleanFeed : filtrez,
@@ -41,12 +41,14 @@ export const LandingPage = () => {
             </h1>
           </div>
         </div>
+        <div className="flex justify-center pb-32">
         <button
-          className="flex gap-2 items-baseline px-8 py-4 bg-blue-500 text-white rounded-full"
+          className="flex gap-2 items-baseline px-8 py-4 bg-blue-500 text-white rounded-full font-bold text-lg"
           onClick={handleLoginClick}
         >
           Connexion <span>→</span>
         </button>
+        </div>
       </main>
 
       <footer className="footer">
