@@ -1,0 +1,210 @@
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1EEF5;
+}
+
+.dashboard {
+    display: flex;
+    min-height: calc(100vh - 60px); /* Ajusté pour laisser de l'espace pour la navbar */
+    margin-top: 60px; /* Espace pour la navbar */
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    z-index: 1000;
+    height: 60px; /* Hauteur fixe pour la navbar */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 40px;
+}
+
+.user-info svg {
+    color: #333; /* Couleur de l'icône utilisateur */
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.awareness-section {
+    background-image: url("../../assets/background dashboard.png");
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    color: black;
+}
+
+.awareness-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.awareness-section p {
+    max-width: 60%;
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.harassment-illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: auto;
+}
+
+.issues-container {
+    display: flex;
+    gap: 2rem;
+    width: 75%;
+    height: 460px;
+}
+
+.issue-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.issue-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.issue-card h2 {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+.report-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: 1rem 10.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 30%;
+}
+
+.report-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    color: black;
+    width: 300px;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    margin-top: 20px; /* Ajusté pour aligner avec le contenu principal */
+    height: calc(80vh - -50px); /* Hauteur ajustée pour s'aligner avec le contenu */
+    position: sticky;
+    top: 60px; /* Colle la sidebar sous la navbar */
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.sidebar h3 {
+    margin-bottom: 1rem;
+}
+
+.reward-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reward-item svg {
+    color: #FFD700; /* Couleur dorée pour l'icône de récompense */
+}
+
+.sidebar button {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Ajoutez ces styles pour améliorer la réactivité */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+        position: static;
+    }
+
+    .issues-container {
+        flex-direction: column;
+    }
+}
+.logo {
+    height: 120px;
+    width: 100px;
+}
+.reward-logo {
+    border: #000000 solid 1px;
+    border-radius: 50%;
+    width: 50px; /* ou la taille que vous préférez */
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.reward-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}

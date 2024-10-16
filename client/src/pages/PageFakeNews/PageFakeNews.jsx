@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './PageFakeNews.css';
 
 // Import images using require
 const images = {

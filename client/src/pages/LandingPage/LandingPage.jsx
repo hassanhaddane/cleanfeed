@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import cleanfeedLogo from "../../assets/cleanfeed-LOGO.png";
-import "./style.css";
+import "./landingPage.css";
 
 export const LandingPage = () => {
   const navigate = useNavigate();
@@ -12,21 +12,6 @@ export const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      <header className="header">
-        <img
-          className="h-32 w-32"
-          alt="CleanFeed Logo"
-          src={cleanfeedLogo}
-        />
-        <div className="nav-links">
-          <span className="about">À propos</span>
-          <span className="contact">Nous contacter</span>
-          <div className="language-selector">
-            <span className="language">FR</span>
-          </div>
-        </div>
-      </header>
-
       <main className="flex-col">
         <div>
           <div className="flex justify-center items-center flex-row-reverse">

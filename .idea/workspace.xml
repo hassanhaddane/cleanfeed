@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d14fc5d4-9a78-4928-84ad-526fefb48686" name="Changes" comment="refacto authentification form" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2nStKhy4g0Rk3HPAmkPApxG5Osn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "go.import.settings.migrated": "true",
+    "ignore_missing_gitignore": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hassa/IdeaProjects/cleanfeed/src/pages/Dashboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hassa\IdeaProjects\cleanfeed\src\pages\Dashboard" />
+      <recent name="C:\Users\hassa\IdeaProjects\cleanfeed\src\pages\Authentification" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hassa\IdeaProjects\cleanfeed\client\src\assets" />
+      <recent name="C:\Users\hassa\IdeaProjects\cleanfeed\client" />
+      <recent name="C:\Users\hassa\IdeaProjects\cleanfeed\src\assets" />
+      <recent name="C:\Users\hassa\IdeaProjects\cleanfeed\src\pages\PageCyberbullying" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d14fc5d4-9a78-4928-84ad-526fefb48686" name="Changes" comment="" />
+      <created>1728978242545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728978242545</updated>
+      <workItem from="1728978244411" duration="1102000" />
+      <workItem from="1728980554542" duration="25909000" />
+    </task>
+    <task id="LOCAL-00001" summary="update dashboard and landingpage">
+      <option name="closed" value="true" />
+      <created>1728981329880</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728981329881</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refacto athentification page">
+      <option name="closed" value="true" />
+      <created>1728981799346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728981799346</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix inputs orders">
+      <option name="closed" value="true" />
+      <created>1728981869732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728981869732</updated>
+    </task>
+    <task id="LOCAL-00004" summary="v1 dashboard">
+      <option name="closed" value="true" />
+      <created>1728982275649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728982275649</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v1 cyberbullingpage with routes">
+      <option name="closed" value="true" />
+      <created>1728984016983</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728984016983</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add routes &amp; fakenews &amp; cyberbullings pages &amp; posts">
+      <option name="closed" value="true" />
+      <created>1728986854775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728986854775</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add images">
+      <option name="closed" value="true" />
+      <created>1728988008674</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728988008674</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refacto">
+      <option name="closed" value="true" />
+      <created>1728998314034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728998314034</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refacto images">
+      <option name="closed" value="true" />
+      <created>1728998628899</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728998628899</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refacto app">
+      <option name="closed" value="true" />
+      <created>1729001331612</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729001331612</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refacto dashboard">
+      <option name="closed" value="true" />
+      <created>1729062913438</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729062913438</updated>
+    </task>
+    <task id="LOCAL-00012" summary="delete scroll bar from landing page">
+      <option name="closed" value="true" />
+      <created>1729063305926</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729063305926</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refacto authentification form">
+      <option name="closed" value="true" />
+      <created>1729063609026</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729063609026</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update dashboard and landingpage" />
+    <MESSAGE value="refacto athentification page" />
+    <MESSAGE value="fix inputs orders" />
+    <MESSAGE value="v1 dashboard" />
+    <MESSAGE value="v1 cyberbullingpage with routes" />
+    <MESSAGE value="add routes &amp; fakenews &amp; cyberbullings pages &amp; posts" />
+    <MESSAGE value="add images" />
+    <MESSAGE value="refacto" />
+    <MESSAGE value="refacto images" />
+    <MESSAGE value="refacto app" />
+    <MESSAGE value="refacto dashboard" />
+    <MESSAGE value="delete scroll bar from landing page" />
+    <MESSAGE value="refacto authentification form" />
+    <option name="LAST_COMMIT_MESSAGE" value="refacto authentification form" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

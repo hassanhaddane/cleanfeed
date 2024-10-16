@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import cleanfeedLogo from '../../assets/cleanfeed-LOGO.png';
-import './style.css';
+import './Authenification.css';
 
 export const Authentification = () => {
     const [formData, setFormData] = useState({
@@ -26,9 +26,7 @@ export const Authentification = () => {
 
     return (
         <div className="authentification">
-            <header className="header">
-                <div className="language-selector">FR</div>
-            </header>
+
             <main className="main-content">
                 <img className="cleanfeed-logo" alt="Cleanfeed LOGO" src={cleanfeedLogo}/>
                 <form onSubmit={handleSubmit} className="form">

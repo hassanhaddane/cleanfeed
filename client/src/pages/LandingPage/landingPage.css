@@ -3,7 +3,13 @@ html, body {
   padding: 0;
   overflow: hidden;
 }
-
+.text-4xl{
+  color: black;
+}
+.text-white{
+  color: black;
+  background-color: white;
+}
 .landing-page {
   height: 100vh;
   display: flex;

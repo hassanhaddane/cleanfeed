@@ -1,9 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { User } from "lucide-react";
+import cleanfeedLogo from "../../assets/cleanfeed-LOGO.png";
 import harassementIllustration from "../../assets/harassment.png";
 import fakeNews from "../../assets/fake-news.png";
 import cyberbullying from "../../assets/sadness.png";
-import "./style.css";
+import uberEatsLogo from "../../assets/ubereats-logo.jpg"; // Assurez-vous d'avoir ce fichier
+import adidasLogo from "../../assets/adidas-logo.png"; // Assurez-vous d'avoir ce fichier
+import airFranceLogo from "../../assets/airfrance-logo.png"; // Assurez-vous d'avoir ce fichier
+import "./Dashboard.css";
 
 export const Dashboard = () => {
   const navigate = useNavigate();
@@ -17,92 +22,71 @@ export const Dashboard = () => {
   };
 
   return (
-      <div className="mx-8">
-        <header className="header">
-          <img
-              className="logo"
-              src="../../assets/CleanFeed_LOGO.png"
-              alt="CleanFeed Logo"
-          />
-          <div className="user-info">Léa. B</div>
-        </header>
+      <div className="dashboard">
+        <div className="main-container">
+          <header className="header">
+            <img
+                className="logo"
+                src={cleanfeedLogo}
+                alt="CleanFeed Logo"
+            />
+            <div className="user-info">
+              <span>Nous contacter</span>
+              <User size={24} />
+              <span>Léa.B</span>
+            </div>
+          </header>
 
-        <div className="grid grid-cols-4 gap-4">
-          <main className="flex-col justify-center items-center col-span-3">
-            <div className="card shadow-xl mb-16 overflow-hidden awareness-section">
-              <div className="card-body text-purple-900 p-8 relative">
-                <h2 className="card-title text-2xl mb-2">
-                  L'importance de la sensibilisation au cyber harcèlement.
-                </h2>
-                <p className="mb-4 max-w-[60%]">
-                  Nous sommes ici pour soutenir et prendre les mesures appropriées
-                  afin d'assurer un environnement professionnel sûr, respectueux.
-                </p>
-                <button className="btn btn-neutral btn-sm">En savoir +</button>
-                <img
-                    src={harassementIllustration}
-                    alt="Illustration de harcèlement"
-                    className="absolute right-0 bottom-0 w-1/3 h-auto"
-                />
-              </div>
+          <main className="main-content">
+            <div className="awareness-section">
+              <h2>L'importance de la sensibilisation au cyber harcèlement.</h2>
+              <p>
+                Nous sommes ici pour soutenir et prendre les mesures appropriées
+                afin d'assurer un environnement professionnel sûr, respectueux.
+              </p>
+              <button className="learn-more-btn">En savoir +</button>
+              <img
+                  src={harassementIllustration}
+                  alt="Illustration de harcèlement"
+                  className="harassment-illustration"
+              />
             </div>
 
-            <div className="flex gap-8">
-              <div className="card bg-base-100 shadow-xl mb-16 flex-1 overflow-hidden">
-                <figure className="relative">
-                  <img src={cyberbullying} alt="Illustration de cyberbullying" className="w-full h-48 object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                  <h2 className="card-title text-white absolute bottom-4 left-4">Cyberbullying</h2>
-                </figure>
-                <div className="card-body p-4">
-                  <button
-                      className="btn btn-error w-full"
-                      onClick={handlepubsCyberbullying}
-                  >
-                    Signaler
-                  </button>
-                </div>
+            <div className="issues-container">
+              <div className="issue-card">
+                <h2>Cyberbullying</h2>
+                <img src={cyberbullying} alt="Illustration de cyberbullying" />
+                <button className="report-btn" onClick={handlepubsCyberbullying}>
+                  Signaler
+                </button>
               </div>
 
-              <div className="card bg-base-100 shadow-xl mb-16 flex-1 overflow-hidden">
-                <figure className="relative">
-                  <img src={fakeNews} alt="Illustration de fake news" className="w-full h-48 object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                  <h2 className="card-title text-white absolute bottom-4 left-4">Fake news</h2>
-                </figure>
-                <div className="card-body p-4">
-                  <button className="btn btn-error w-full" onClick={handleFakeNewsPosts}>
-                    Signaler
-                  </button>
-                </div>
+              <div className="issue-card">
+                <h2>Fake news</h2>
+                <img src={fakeNews} alt="Illustration de fake news" />
+                <button className="report-btn" onClick={handleFakeNewsPosts}>
+                  Signaler
+                </button>
               </div>
             </div>
           </main>
-          <aside className="card bg-base-300 px-12 py-8">
-            <h3 className="card-title mb-8">Mes récompenses</h3>
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <span className="text-2xl mr-3">👟</span>
-                <span>10 signalements = 5% réduction chez Adidas</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-2xl mr-3">🍔</span>
-                <span>25 signalements = 10% réduction chez UberEats</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-2xl mr-3">✈️</span>
-                <span>50 signalements = 15% réduction chez AirFrance</span>
-              </li>
-            </ul>
-            <button className="btn btn-primary mt-8 w-full">
-              Voir toutes les récompenses
-            </button>
-          </aside>
         </div>
 
-        <footer className="footer">
-          <button className="contact-btn">Nous contacter</button>
-        </footer>
+        <aside className="sidebar">
+          <h3>Mes récompenses</h3>
+          <div className="reward-item">
+            <img src={uberEatsLogo} alt="UberEats Logo" className="reward-logo" />
+            <p>Vous avez débloqué une promotion de 5 % chez UberEats</p>
+          </div>
+          <div className="reward-item">
+            <img src={adidasLogo} alt="Adidas Logo" className="reward-logo" />
+            <p>Vous avez débloqué une promotion de 10 % chez Adidas</p>
+          </div>
+          <div className="reward-item">
+            <img src={airFranceLogo} alt="Air France Logo" className="reward-logo" />
+            <p>Vous avez débloqué une promotion de 20 % chez Air France</p>
+          </div>
+        </aside>
       </div>
   );
 };

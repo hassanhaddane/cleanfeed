@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import './postsFakeNews.css';
 
 // Import your images here
 import cleanLogo from '../../../assets/CleanFeed_LOGO.png';

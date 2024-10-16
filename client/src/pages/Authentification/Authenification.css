@@ -30,8 +30,8 @@ html, body {
 }
 
 .cleanfeed-logo {
-  margin-bottom: 2rem;
-  max-height: 15vh;
+  margin-bottom: -5rem;
+  max-height: 40vh;
   width: auto;
 }
 
@@ -40,21 +40,24 @@ html, body {
   flex-direction: column;
   width: 100%;
   max-width: 300px;
+  border-radius: 12px;
+  background-color: white;
+  padding: 30px;
 }
 
 .form input {
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #e0e0e0;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: white;
 }
 
 .login-button {
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
-  background-color: #007bff;
-  color: white;
+  background-color: #C4E1F6;
+  color: black;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
