@@ -38,6 +38,8 @@ main {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 50%;
 }
 
 .report-item {
@@ -49,6 +51,11 @@ main {
     background-color: #f0f8ff;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.report-item:hover {
+    background-color: #e6f3ff;
 }
 
 .social-icon {
@@ -59,10 +66,16 @@ main {
 .new-report-btn {
     width: 100%;
     padding: 10px;
-    background-color: #f0f8ff;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-report-btn:hover {
+    background-color: #45a049;
 }
 
 .report-details {
@@ -70,11 +83,16 @@ main {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 50%;
 }
 
-.tweet-screenshot {
+.publication-screenshot {
     width: 100%;
+    max-height: 300px;
+    object-fit: cover;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 .vote-buttons {
@@ -88,8 +106,9 @@ main {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.vote-buttons button.voted {
+.vote-buttons button:hover {
     background-color: #e0e0e0;
 }
