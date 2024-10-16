@@ -1,6 +1,9 @@
 import express from "express";
+import cors from "cors";
 import sqlite from "sqlite3";
+
 const app = express();
+app.use(cors());
 const port = 8080;
 
 // il sufit de passer la base de donnée en file pour serialiser sur le disque
