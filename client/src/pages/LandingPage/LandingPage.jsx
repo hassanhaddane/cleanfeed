@@ -35,11 +35,6 @@ export const LandingPage = () => {
         </div>
       </main>
 
-      <footer className="footer">
-        <div className="footer-links">
-          <span>Conditions d'utilisation | Confidentialité</span>
-        </div>
-      </footer>
     </div>
   );
 };

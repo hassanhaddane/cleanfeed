@@ -1,7 +1,15 @@
-.fake-news-page {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cyberbullying-page {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
 .header {
@@ -9,27 +17,88 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 130px;
+    width: 180px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .main-content {
+    flex: 1;
     display: flex;
-    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
-.report-form {
-    flex: 1;
-    padding: 1rem;
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.preview-sidebar {
-    width: 300px;
-    padding: 1rem;
-    background-color: #f0f0f0;
+.myh1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: black;
+
+}
+
+.form input,
+.form select,
+.form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-button {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    background-color: #C4E1F6;
+    color: black;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.arrow-icon {
+    margin-left: 0.5rem;
 }
 
 .footer {
     padding: 1rem;
     text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
 }
 
-/* Add more specific styles as needed */
+.footer-text {
+    color: #333;
+}

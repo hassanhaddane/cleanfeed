@@ -43,9 +43,6 @@ export const Authentification = () => {
                 </form>
             </main>
 
-            <footer className="footer">
-                <div className="footer-text">Conditions d'utilisation | Confidentialité</div>
-            </footer>
         </div>
     );
 };

@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './postsFakeNews.css';
 import '../../Dashboard/Dashboard.css'; // Import the dashboard CSS
 
@@ -65,6 +65,10 @@ export const PostsFakeNews = () => {
     const [selectedPosts, setSelectedPosts] = useState(null);
     const [votes, setVotes] = useState({});
 
+    const handleNewReport = () => {
+        navigate('/cyberbullying');
+    };
+
     const handlePostsClick = (posts) => {
         setSelectedPosts(posts);
     };
@@ -77,10 +81,6 @@ export const PostsFakeNews = () => {
                 [type]: (prevVotes[postsId]?.[type] || 0) + 1
             }
         }));
-    };
-
-    const handleNewPosts = () => {
-        navigate('/PageFakeNews');
     };
 
     return (
@@ -107,14 +107,13 @@ export const PostsFakeNews = () => {
                             <img src={post.icon} alt="Social Media Icon" className="social-icon"/>
                         </div>
                     ))}
-                    <button className="new-post-btn" onClick={handleNewPosts}>Faire un signalement</button>
+                    <button className="new-report-btn" onClick={handleNewReport}>Faire un signalement</button>
                 </div>
 
                 <div className="posts-details-sidebar">
                     {selectedPosts ? (
                         <>
-                            <h3>Lien : <a href={selectedPosts.link} target="_blank"
-                                          rel="noopener noreferrer">{selectedPosts.link}</a></h3>
+                            <h3>Lien : <a href={selectedPosts.link} target="_blank" rel="noopener noreferrer">{selectedPosts.link}</a></h3>
                             <p>Username du harceleur : {selectedPosts.username}</p>
                             <p>Contexte : {selectedPosts.context}</p>
                             <img
