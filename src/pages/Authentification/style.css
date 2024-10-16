@@ -1,9 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .authentification {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url("bg.png");
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,15 +21,18 @@
 }
 
 .main-content {
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 5vh;
 }
 
 .cleanfeed-logo {
   margin-bottom: 2rem;
+  max-height: 15vh;
+  width: auto;
 }
 
 .form {
