@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./PageFakeNews.css";
-import axios from "axios";
+// import axios from "axios";
 
 // Import images using require
 const images = {
@@ -59,7 +59,7 @@ export const PageFakeNews = () => {
     };
     console.log("Data:", data);
 
-    axios.post("http://0.0.0.0:8080/posts", data);
+    // axios.post("http://0.0.0.0:8080/posts", data);
   };
 
   return (
