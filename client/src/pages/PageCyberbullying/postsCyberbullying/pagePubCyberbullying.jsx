@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './pagePubCyberbullying.css';
+import '../../Dashboard/Dashboard.css'; // Import the dashboard CSS
 
 // Import your images here
 import cleanLogo from '../../../assets/CleanFeed_LOGO.png';
@@ -18,7 +19,8 @@ const reports = [
         icon: twitterIcon,
         username: "@usernamebad1",
         context: "Racisme sur un homme de couleur noir",
-        link: "https://twitter.com/user1/status/123456789",
+        link: "https://twitter.com/user1/status/1234ch" +
+            "56789",
         image: "https://example.com/tweet1.jpg"
     },
     {
@@ -58,7 +60,6 @@ const reports = [
         image: "https://example.com/fb1.jpg"
     },
 ];
-
 export const PagePubsCyberbulling = () => {
     const navigate = useNavigate();
     const [selectedReport, setSelectedReport] = useState(null);
@@ -83,40 +84,47 @@ export const PagePubsCyberbulling = () => {
     };
 
     return (
-        <div className="page-pubs-cyberbulling">
-            <header>
-                <img src={cleanLogo} alt="Clean Feed Logo" className="logo" />
+        <div className="main1">
+            <header className="header">
+                <img src={cleanLogo} alt="Clean Feed Logo" className="logo"/>
                 <div className="user-info">
                     <span>Nous contacter</span>
-                    <img src={userAvatar} alt="User Avatar" className="avatar" />
+                    <img src={userAvatar} alt="User Avatar" className="avatar"/>
                     <span>Léa.B</span>
                 </div>
             </header>
 
-            <main>
+            <main className="main">
                 <div className="reports-list">
+                    <h1 id="h1">Signalements de cyberharcèlement</h1>
                     {reports.map(report => (
-                        <div key={report.id} className="report-item" onClick={() => handleReportClick(report)}>
+                        <div
+                            key={report.id}
+                            className={`report-item ${selectedReport?.id === report.id ? 'clicked' : ''}`}
+                            onClick={() => handleReportClick(report)}
+                        >
                             <span>{report.text}</span>
-                            <img src={report.icon} alt="Social Media Icon" className="social-icon" />
+                            <img src={report.icon} alt="Social Media Icon" className="social-icon"/>
                         </div>
                     ))}
                     <button className="new-report-btn" onClick={handleNewReport}>Faire un signalement</button>
                 </div>
 
-                <div className="report-details">
+                <div className="report-details-sidebar">
                     {selectedReport ? (
                         <>
-                            <h3>Lien : <a href={selectedReport.link} target="_blank" rel="noopener noreferrer">{selectedReport.link}</a></h3>
+                            <h3>Lien : <a href={selectedReport.link} target="_blank"
+                                          rel="noopener noreferrer">{selectedReport.link}</a></h3>
                             <p>Username du harceleur : {selectedReport.username}</p>
                             <p>Contexte : {selectedReport.context}</p>
-                            <img src={selectedReport.image} alt="Publication Screenshot" className="publication-screenshot" />
+                            <img src={"https://images.lanouvellerepublique.fr/image/upload/58c2cc0f459a453b008b4f35"}
+                                 alt="Publication Screenshot" className="publication-screenshot"/>
                             <div className="vote-buttons">
-                                <button onClick={() => handleVote(selectedReport.id, 'dislike')}>
-                                    👎 {votes[selectedReport.id]?.dislike || 0}
-                                </button>
                                 <button onClick={() => handleVote(selectedReport.id, 'like')}>
                                     👍 {votes[selectedReport.id]?.like || 0}
+                                </button>
+                                <button onClick={() => handleVote(selectedReport.id, 'dislike')}>
+                                    👎 {votes[selectedReport.id]?.dislike || 0}
                                 </button>
                             </div>
                         </>

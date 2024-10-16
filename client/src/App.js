@@ -6,7 +6,7 @@ import { Dashboard } from "./pages/Dashboard/Dashboard";
 import {CyberbullyingPage} from "./pages/PageCyberbullying/PageCyberbullying";
 import {PageFakeNews} from "./pages/PageFakeNews/PageFakeNews";
 import {PagePubsCyberbulling} from "./pages/PageCyberbullying/postsCyberbullying/pagePubCyberbullying";
-import {PagePubsFakeNews} from "./pages/PageFakeNews/postsFakeNews/postsFakeNews";
+import {PostsFakeNews} from "./pages/PageFakeNews/postsFakeNews/postsFakeNews";
 
 function App() {
     return (
@@ -32,7 +32,7 @@ function App() {
                     <Route path="/pubsCyberbullying" element={<PagePubsCyberbulling />} />
 
                     {/* Route pour la page FakeNews Posts */}
-                    <Route path="/pubsFakeNews" element={<PagePubsFakeNews />} />
+                    <Route path="/pubsFakeNews" element={<PostsFakeNews />} />
 
                 </Routes>
             </div>

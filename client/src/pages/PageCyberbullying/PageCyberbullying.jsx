@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { User } from "lucide-react";
 import './PageCyberbullying.css';
 
 // Import images using require
@@ -20,8 +21,6 @@ export const CyberbullyingPage = () => {
   });
 
   const [preview, setPreview] = useState(null);
-  const [votes, setVotes] = useState({ likes: 0, dislikes: 0 });
-  const [userVote, setUserVote] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -42,28 +41,29 @@ export const CyberbullyingPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPreview(formData);
-  };
-
-  const handleVote = (voteType) => {
-    if (userVote === null) {
-      setVotes(prevVotes => ({
-        ...prevVotes,
-        [voteType]: prevVotes[voteType] + 1
-      }));
-      setUserVote(voteType);
-    }
+    // Handle form submission here
+    console.log(formData);
   };
 
   return (
       <div className="cyberbullying-page">
         <header className="header">
-          <img src={images.cleanfeedLogo} alt="CleanFeed Logo" className="logo" />
-          <div className="user-info">Léa.B</div>
+          <img
+              className="logo"
+              src={images.cleanfeedLogo}
+              alt="CleanFeed Logo"
+          />
+          <div className="user-info">
+            <span>Nous contacter</span>
+            <User size={24} />
+            <span>Léa.B</span>
+          </div>
         </header>
 
         <main className="main-content">
-          <form onSubmit={handleSubmit} className="report-form">
+          <form onSubmit={handleSubmit} className="form">
+            <h1 className="myh1">Signalement de Cyberbullying</h1>
+
             <select
                 name="socialNetwork"
                 value={formData.socialNetwork}
@@ -111,35 +111,14 @@ export const CyberbullyingPage = () => {
                 required
             />
 
-            <button type="submit">Signaler</button>
+            <button type="submit" className="submit-button">
+              Signaler <span className="arrow-icon">→</span>
+            </button>
           </form>
-
-          {preview && (
-              <div className="preview-sidebar">
-                <h3>Aperçu du signalement</h3>
-                <img
-                    src={images[formData.socialNetwork + 'Icon']}
-                    alt={formData.socialNetwork}
-                    className="social-icon"
-                />
-                <p><strong>Lien:</strong> {formData.postLink}</p>
-                <p><strong>Utilisateur:</strong> {formData.userAccount}</p>
-                <p><strong>Description:</strong> {formData.description}</p>
-                {preview instanceof File ? (
-                    <img src={URL.createObjectURL(preview)} alt="Screenshot" className="preview-image" />
-                ) : (
-                    <img src={'https://media.istockphoto.com/id/1222357475/fr/vectoriel/ic%C3%B4ne-de-pr%C3%A9visualisation-dimage-place-dimage-pour-le-site-web-ou-la-conception-dui-ux.jpg?s=612x612&w=0&k=20&c=BBIsJc60xEMdIHhC3p8dsO8rbWAPg29fP95_vktRsPc='} alt="Screenshot" className="preview-image" />
-                )}
-                <div className="vote-section">
-                  <button onClick={() => handleVote('likes')} disabled={userVote !== null}> {votes.likes}</button>
-                  <button onClick={() => handleVote('dislikes')} disabled={userVote !== null}> {votes.dislikes}</button>
-                </div>
-              </div>
-          )}
         </main>
 
         <footer className="footer">
-          <button className="contact-btn">Nous contacter</button>
+          <div className="footer-text">Conditions d'utilisation | Confidentialité</div>
         </footer>
       </div>
   );
