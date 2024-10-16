@@ -29,69 +29,74 @@ export const Dashboard = () => {
 
         <div className="grid grid-cols-4 gap-4">
           <main className="flex-col justify-center items-center col-span-3">
-            <div className="card bg-base-100 image-full w-1/2 h-1/3 shadow-xl mb-16">
-              <figure>
+            <div className="card shadow-xl mb-16 overflow-hidden awareness-section">
+              <div className="card-body text-purple-900 p-8 relative">
+                <h2 className="card-title text-2xl mb-2">
+                  L'importance de la sensibilisation au cyber harcèlement.
+                </h2>
+                <p className="mb-4 max-w-[60%]">
+                  Nous sommes ici pour soutenir et prendre les mesures appropriées
+                  afin d'assurer un environnement professionnel sûr, respectueux.
+                </p>
+                <button className="btn btn-neutral btn-sm">En savoir +</button>
                 <img
                     src={harassementIllustration}
-                    alt="Illustration de harcellement"
+                    alt="Illustration de harcèlement"
+                    className="absolute right-0 bottom-0 w-1/3 h-auto"
                 />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Sensibilisation contre les fakes news et le cyberharcèlement
-                </h2>
-                <p>
-                  Nous sommes ici pour soutenir et prendre les mesures appropriées
-                  afin d'assurer un environnement numérique sûr et respectueux.
-                </p>
-                <div className="card-actions justify-end">
-                  <button className="btn">En savoir plus</button>
-                </div>
               </div>
             </div>
 
             <div className="flex gap-8">
-              <div className="card bg-base-100 image-full w-96 shadow-xl mb-16">
-                <figure>
-                  <img src={cyberbullying} alt="Illustration de harcellement" />
+              <div className="card bg-base-100 shadow-xl mb-16 flex-1 overflow-hidden">
+                <figure className="relative">
+                  <img src={cyberbullying} alt="Illustration de cyberbullying" className="w-full h-48 object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                  <h2 className="card-title text-white absolute bottom-4 left-4">Cyberbullying</h2>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Cyberbullying</h2>
-                  <p>Dénoncer un harcellement</p>
-                  <div className="card-actions justify-end">
-                    <button
-                        className="btn btn-error"
-                        onClick={handlepubsCyberbullying}
-                    >
-                      Signaler
-                    </button>
-                  </div>
+                <div className="card-body p-4">
+                  <button
+                      className="btn btn-error w-full"
+                      onClick={handlepubsCyberbullying}
+                  >
+                    Signaler
+                  </button>
                 </div>
               </div>
 
-              <div className="card bg-base-100 image-full w-96 shadow-xl mb-16">
-                <figure>
-                  <img src={fakeNews} alt="Illustration de harcellement" />
+              <div className="card bg-base-100 shadow-xl mb-16 flex-1 overflow-hidden">
+                <figure className="relative">
+                  <img src={fakeNews} alt="Illustration de fake news" className="w-full h-48 object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                  <h2 className="card-title text-white absolute bottom-4 left-4">Fake news</h2>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Fake news</h2>
-                  <p>Dénoncer une fake news</p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-error" onClick={handleFakeNewsPosts}>
-                      Signaler
-                    </button>
-                  </div>
+                <div className="card-body p-4">
+                  <button className="btn btn-error w-full" onClick={handleFakeNewsPosts}>
+                    Signaler
+                  </button>
                 </div>
               </div>
             </div>
           </main>
           <aside className="card bg-base-300 px-12 py-8">
             <h3 className="card-title mb-8">Mes récompenses</h3>
-            <ul className="rewards-list">
-              <li>10 signalements = 5% réduction chez Adidas</li>
-              <li>25 signalements = 10% réduction chez UberEats</li>
-              <li>50 signalements = 15% réduction chez AirFrance</li>
+            <ul className="space-y-4">
+              <li className="flex items-center">
+                <span className="text-2xl mr-3">👟</span>
+                <span>10 signalements = 5% réduction chez Adidas</span>
+              </li>
+              <li className="flex items-center">
+                <span className="text-2xl mr-3">🍔</span>
+                <span>25 signalements = 10% réduction chez UberEats</span>
+              </li>
+              <li className="flex items-center">
+                <span className="text-2xl mr-3">✈️</span>
+                <span>50 signalements = 15% réduction chez AirFrance</span>
+              </li>
             </ul>
+            <button className="btn btn-primary mt-8 w-full">
+              Voir toutes les récompenses
+            </button>
           </aside>
         </div>
 

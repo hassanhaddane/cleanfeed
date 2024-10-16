@@ -1,39 +1,79 @@
-#root{
+#root {
   background-color: #e0e0e0;
-
 }
+
 .dashboard {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "main sidebar"
-    "footer footer";
-  grid-template-columns: 1fr 250px;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
   min-height: 100vh;
 }
 
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
 .header {
-  grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
 
-.main-content {
-  grid-area: main;
-  padding: 1rem;
+.sidebar {
+  width: 250px;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  background-color: #f0f0f0;
-  padding: 1rem;
+.sidebar h3 {
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.sidebar li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+}
+
+.sidebar button {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.sidebar button:hover {
+  background-color: #2c5282;
 }
 
 .footer {
-  grid-area: footer;
   padding: 1rem;
   text-align: center;
 }
@@ -80,6 +120,15 @@
   margin-bottom: 0.5rem;
 }
 
-.py-8{
+.py-8 {
   background-color: white;
+}
+
+.awareness-section {
+  background: linear-gradient(to right, #d8b4fe, #ffffff);
+}
+
+.btn-sm {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
 }
